@@ -32,6 +32,9 @@ body {
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
+
 }
 .site-nav .link{
     color: var(--title-text-color);
@@ -58,16 +61,17 @@ body {
     text-decoration: none;
 }
 .connect-link:hover,
-.conect-link:focus {
+.connect-link:focus {
     color: var(--hover);
 }
 .hero {
+    text-align: center;
     background-color: var(--title-text-color);
 }
 .hero-title {
-    color:#FFFFFF
-}
-.hero-title {
+    margin-top: 0;
+    margin-bottom: 48px;
+    color:#FFFFFF;
     font-weight: 600;
     font-size: 56px;
     line-height: 1;
@@ -85,13 +89,32 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 }
-.section-title {
+.section .title {
+    margin-top: 0;
+    margin-bottom: 8px;
     color: var(--title-text-color);
     font-weight:600;
     font-size:36px;
     line-height:1.1;
     text-align: center;
     text-transform: capitalize;
+}
+.team-list .title {
+    margin-top: 32px;
+}
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    outline: 1px solid red;
+
+}
+.section-title {
+    margin-top: 0;
+    margin-bottom: 72px;
+    text-align: center;
+}
+.work {
+    padding-top: 0;
 }
 .team {
     background-color: var(--cloud-color);
@@ -115,6 +138,12 @@ body {
     line-height: 1.2;
     letter-spacing: 0.04em;
     cursor: pointer;
+    border-radius: 4px;
+    padding: 16px 32px;
+    display:inline-block;
+    min-width: 170px;
+    align-items: center;
+    border: 1px solid transparent;
 }
 .button:hover,
 .button:focus {
@@ -124,6 +153,8 @@ body {
     font-weight:400;
     font-size: 16px; 
     line-height: 1.5; 
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .studio-footer {
     color: var(--cloud-color);
@@ -184,4 +215,11 @@ body {
 
 .link {
     text-decoration: none;
+}
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
